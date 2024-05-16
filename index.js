@@ -341,3 +341,27 @@ let libro=[
     }
 ]
 
+libro.push (
+    {
+        titulo: "Ojos de perro azul",
+        autor: "Gabriel García Márquez",
+        genero: "Ficción",
+        idioma: "Español",
+        precio: 29900,
+        formato: "Tapa blanda",
+        isbn: "9781400034871",
+        descripcion: "Una colección de cuentos que exploran el realismo mágico.",
+        estado: "Nuevo",
+        ubicacion: "Pasillo 3, Estante 3",
+        fecha_publicacion: "1972",
+        editorial: "Editorial Sudamericana",
+        paginas: 160,
+        dimensiones: "12.5 x 1 x 19.5 cm",
+        peso: "0.18 kg"
+    }
+)
+
+console.log(libro.length)
+libro.pop(5)
+console.log(libro.length)
+console.log(libro)
