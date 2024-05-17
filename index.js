@@ -341,27 +341,62 @@ let libro=[
     }
 ]
 
-libro.push (
-    {
-        titulo: "Ojos de perro azul",
-        autor: "Gabriel García Márquez",
-        genero: "Ficción",
-        idioma: "Español",
-        precio: 29900,
-        formato: "Tapa blanda",
-        isbn: "9781400034871",
-        descripcion: "Una colección de cuentos que exploran el realismo mágico.",
-        estado: "Nuevo",
-        ubicacion: "Pasillo 3, Estante 3",
-        fecha_publicacion: "1972",
-        editorial: "Editorial Sudamericana",
-        paginas: 160,
-        dimensiones: "12.5 x 1 x 19.5 cm",
-        peso: "0.18 kg"
-    }
-)
 
-console.log(libro.length)
-libro.pop(5)
-console.log(libro.length)
-console.log(libro)
+
+function agregarLibro(libro) {
+    titulo=prompt("ingrese el titulo del libro")
+    autor=prompt("ingrese el autor del libro")
+    genero=prompt("ingrese el genero del libro")
+    idioma=prompt("ingrese el idioma del libro")
+    precio=prompt("ingrese el precio del libro")
+    formato=prompt("ingrese el formato del libro")
+    isbn=prompt("ingrese el isbn del libro")
+    descripcion=prompt("ingrese el descripcion del libro")
+    estado=prompt("ingrese el estado del libro")
+    ubicacion=prompt("ingrese el ubicacion del libro")
+    fecha_publicacion=prompt("ingrese el fecha_publicacion del libro")
+    editorial=prompt("ingrese el editorial del libro")
+    paginas=prompt("ingrese el paginas del libro")
+    dimensiones=prompt("ingrese el dimensiones del libro")
+    peso=prompt("ingrese el peso del libro")
+    libro.push({titulo,autor,genero,idioma,precio,formato,isbn,descripcion,estado,ubicacion,fecha_publicacion,editorial,paginas,dimensiones,peso})
+    console.log(libro)
+}
+
+function mostrarLibro(libro) {
+    console.log(libro)
+}
+
+function eliminarLibro(libro) {
+    libro.pop()
+    console.log(libro)
+}
+
+let option= 0
+
+function inicio() {
+
+do {
+    option=parseInt(prompt("Elija una opcion \n 1 mostrar libros \n2 eliminar libro \n3 agregar libro \n salir"))
+    switch (option) {
+        case 1:
+            mostrarLibro(libro)
+            break;
+
+        case 2:
+            eliminarLibro(libro)
+        
+        break;
+        case 3:
+            agregarLibro(libro)
+
+        break;
+        default :
+            break;
+    } 
+
+} while (option = 0);
+
+}
+
+inicio()
