@@ -491,6 +491,17 @@ let lista10 = libro.map((libro) => {
 };
 });
 
+let libroConDescuentos = libro.map((libro) => {
+    return {
+        titulo: libro.titulo,
+        autor: libro.autor,
+        editorial: libro.editorial,
+        precio: libro.precio,
+        descuento: libro.descuento,
+        descuento: 20,
+    };
+});
+
 let msg
 let msg2
 let option
@@ -520,6 +531,7 @@ do {
             msg2 = "Elija una opcion\n"
             msg2 += "1. lista de libros \n"
             msg2 += "2. 10 interaciones diferentes \n"
+            msg2 += "3. lista de libros con descuento \n"
 
             let option_listas=parseInt(prompt(msg2))
             switch (option_listas) {
@@ -537,6 +549,9 @@ do {
                     console.table(lista8)
                     console.table(lista9)
                     console.table(lista10)
+                    break;
+                case 3 :
+                    console.table(libroConDescuentos)
                     break;
                 default:
                     alert("ingrese un dato valido")
