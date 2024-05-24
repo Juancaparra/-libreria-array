@@ -11,7 +11,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 3, Estante 1",
         fecha_publicacion: "1967",
-        editorial: "Editorial Sudamericana",
+        editorial: "Torre de papel",
         paginas: 471,
         dimensiones: "13 x 2.5 x 20 cm",
         peso: "0.5 kg"
@@ -28,7 +28,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 1, Estante 2",
         fecha_publicacion: "1949",
-        editorial: "Secker & Warburg",
+        editorial: "Laguna Libros",
         paginas: 328,
         dimensiones: "12.9 x 1.8 x 19.8 cm",
         peso: "0.3 kg"
@@ -45,7 +45,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 3, Estante 4",
         fecha_publicacion: "1960",
-        editorial: "J.B. Lippincott & Co.",
+        editorial: "Torre de papel",
         paginas: 336,
         dimensiones: "13.2 x 1.9 x 20 cm",
         peso: "0.32 kg"
@@ -62,7 +62,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 11, Estante 2",
         fecha_publicacion: "1605",
-        editorial: "Penguin Classics",
+        editorial: "Luna libros",
         paginas: 1072,
         dimensiones: "15.4 x 5.6 x 23.4 cm",
         peso: "1.1 kg"
@@ -79,7 +79,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 2, Estante 6",
         fecha_publicacion: "1890",
-        editorial: "Ward, Lock & Co.",
+        editorial: "Laguna Libros",
         paginas: 254,
         dimensiones: "13.1 x 1.7 x 19.8 cm",
         peso: "0.21 kg"
@@ -96,7 +96,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 5, Estante 1",
         fecha_publicacion: "1915",
-        editorial: "Kurt Wolff Verlag",
+        editorial: "Torre de papel",
         paginas: 201,
         dimensiones: "13.5 x 1.2 x 20.3 cm",
         peso: "0.18 kg"
@@ -113,7 +113,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 5, Estante 2",
         fecha_publicacion: "1925",
-        editorial: "Kurt Wolff Verlag",
+        editorial: "Langosta editores",
         paginas: 255,
         dimensiones: "13.5 x 1.5 x 20.3 cm",
         peso: "0.22 kg"
@@ -130,7 +130,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 10, Estante 1",
         fecha_publicacion: "1320",
-        editorial: "Penguin Classics",
+        editorial: "Luna libros",
         paginas: 798,
         dimensiones: "13.2 x 3.8 x 20.3 cm",
         peso: "0.68 kg"
@@ -147,7 +147,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 8, Estante 2",
         fecha_publicacion: "1953",
-        editorial: "Ballantine Books",
+        editorial: "Luna libros",
         paginas: 249,
         dimensiones: "13.3 x 1.5 x 20.3 cm",
         peso: "0.2 kg"
@@ -164,7 +164,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 4, Estante 1",
         fecha_publicacion: "1980",
-        editorial: "Bompiani",
+        editorial: "Torre de papel",
         paginas: 512,
         dimensiones: "13.5 x 2.5 x 20 cm",
         peso: "0.4 kg"
@@ -181,7 +181,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 6, Estante 3",
         fecha_publicacion: "1866",
-        editorial: "The Russian Messenger",
+        editorial: "Langosta editores",
         paginas: 671,
         dimensiones: "13 x 3 x 20 cm",
         peso: "0.6 kg"
@@ -198,7 +198,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 2, Estante 3",
         fecha_publicacion: "1813",
-        editorial: "T. Egerton, Whitehall",
+        editorial: "Langosta editores",
         paginas: 279,
         dimensiones: "12.9 x 1.7 x 19.8 cm",
         peso: "0.25 kg"
@@ -215,7 +215,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 7, Estante 2",
         fecha_publicacion: "1913",
-        editorial: "Grasset",
+        editorial: "Laguna Libros",
         paginas: 4211,
         dimensiones: "15 x 6 x 23 cm",
         peso: "2.4 kg"
@@ -232,7 +232,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 9, Estante 3",
         fecha_publicacion: "1862",
-        editorial: "A. Lacroix, Verboeckhoven & Cie.",
+        editorial: "Luna libros",
         paginas: 1488,
         dimensiones: "14 x 4 x 21 cm",
         peso: "1.5 kg"
@@ -249,7 +249,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 1, Estante 4",
         fecha_publicacion: "1925",
-        editorial: "Charles Scribner's Sons",
+        editorial: "Laguna Libros",
         paginas: 180,
         dimensiones: "13 x 1.3 x 20 cm",
         peso: "0.18 kg"
@@ -266,7 +266,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 2, Estante 4",
         fecha_publicacion: "1847",
-        editorial: "Thomas Cautley Newby",
+        editorial: "Torre de papel",
         paginas: 416,
         dimensiones: "13 x 2 x 20 cm",
         peso: "0.3 kg"
@@ -283,7 +283,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 3, Estante 3",
         fecha_publicacion: "1897",
-        editorial: "Archibald Constable and Company",
+        editorial: "Langosta editores",
         paginas: 418,
         dimensiones: "13 x 2 x 20 cm",
         peso: "0.32 kg"
@@ -300,7 +300,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 4, Estante 2",
         fecha_publicacion: "1951",
-        editorial: "Little, Brown and Company",
+        editorial: "Laguna Libros",
         paginas: 214,
         dimensiones: "12.9 x 1.6 x 19.8 cm",
         peso: "0.2 kg"
@@ -317,7 +317,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 12, Estante 1",
         fecha_publicacion: "1954",
-        editorial: "Allen & Unwin",
+        editorial: "Langosta editores",
         paginas: 1178,
         dimensiones: "15 x 5 x 23 cm",
         peso: "1.2 kg"
@@ -334,7 +334,7 @@ let libro=[
         estado: "Nuevo",
         ubicacion: "Pasillo 7, Estante 3",
         fecha_publicacion: "1877",
-        editorial: "The Russian Messenger",
+        editorial: "Luna libros",
         paginas: 964,
         dimensiones: "13 x 3 x 20 cm",
         peso: "0.9 kg"
@@ -372,31 +372,191 @@ function eliminarLibro(libro) {
     console.log(libro)
 }
 
-let option= 0
+let lista0 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    autor: libro.autor,
+    editorial: libro.editorial,
+    precio: libro.precio,
+};
+});
 
+
+
+let lista1 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    genero: libro.genero,
+    paginas: libro.paginas,
+    precio: libro.precio,
+};
+});
+
+
+
+let lista2 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    formato: libro.formato,
+    idioma: libro.idioma,
+    isbn: libro.isbn,
+};
+});
+
+
+
+let lista3 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    autor: libro.autor,
+    descripcion: libro.descripcion,
+    estado: libro.estado,
+    precio: libro.precio,
+};
+});
+
+
+
+let lista4 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    dimensiones: libro.dimensiones,
+    peso: libro.peso,
+    fecha_publicacion: libro.fecha_publicacion,
+};
+});
+
+
+
+let lista5 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    ubicacion: libro.ubicacion,
+    editorial: libro.editorial,
+    genero: libro.genero,
+};
+});
+
+
+
+let lista6 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    descripcion: libro.descripcion,
+    editorial: libro.editorial,
+    fecha_publicacion: libro.fecha_publicacion,
+};
+});
+
+
+let lista7 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    autor: libro.autor,
+    editorial: libro.editorial,
+    precio: libro.precio,
+};
+});
+
+
+
+let lista8 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    paginas: libro.paginas,
+    idioma: libro.idioma,
+    precio: libro.precio,
+};
+});
+
+
+
+let lista9 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    fecha_publicacion: libro.fecha_publicacion,
+    editorial: libro.editorial,
+    descripcion: libro.descripcion,
+};
+});
+
+
+
+let lista10 = libro.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    peso: libro.peso,
+    paginas: libro.editorial,
+    formato: libro.formato,
+};
+});
+
+let msg
+let msg2
+let option
+let eliminar
 function inicio() {
 
 do {
-    option=parseInt(prompt("Elija una opcion \n 1 mostrar libros \n2 eliminar libro \n3 agregar libro \n salir"))
+    
+    msg = "Elija una opcion\n"
+    msg += "1. mostrar libros \n"
+    msg += "2. eliminar libro \n"
+    msg += "3. agregar libro \n"
+    msg += "4. Listar libros \n"
+
+    option=parseInt(prompt(msg))
     switch (option) {
         case 1:
             mostrarLibro(libro)
-            break;
-
+        break;
         case 2:
             eliminarLibro(libro)
-        
         break;
         case 3:
             agregarLibro(libro)
+        break;
+        case 4:
+            msg2 = "Elija una opcion\n"
+            msg2 += "1. lista de libros \n"
+            msg2 += "2. 10 interaciones diferentes \n"
 
+            let option_listas=parseInt(prompt(msg2))
+            switch (option_listas) {
+                case 1 :
+                    console.table(lista0)
+                    break;
+                case 2 :
+                    console.table(lista1)
+                    console.table(lista2)
+                    console.table(lista3)
+                    console.table(lista4)
+                    console.table(lista5)
+                    console.table(lista6)
+                    console.table(lista7)
+                    console.table(lista8)
+                    console.table(lista9)
+                    console.table(lista10)
+                    break;
+                default:
+                    alert("ingrese un dato valido")
+                    break;
+            }
+            
+            
         break;
         default :
+            alert("ingrese un dato valido")
             break;
     } 
 
 } while (option = 0);
 
 }
+let continuar
+do {
+    inicio()
+     continuar = prompt("Desea volver al menu")
+} while (continuar === "si");
 
-inicio()
+
