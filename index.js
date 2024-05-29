@@ -502,8 +502,29 @@ let libroConDescuentos = libro.map((libro) => {
     };
 });
 
+let librosCaros = libro.filter((libro) => {
+    return libro.precio > 50000;
+})
+
+let librosConMasPaginas = libro.filter((libro) => {
+    return libro.paginas > 700
+})
+
+let librosConMasPaginasX = librosConMasPaginas.map((libro) => {
+    return {
+        titulo: libro.titulo,
+        autor: libro.autor,
+        editorial: libro.editorial,
+        paginas: libro.paginas,
+    };
+});
+
+let paginasMayorMenor= libro.sort((a,b) => b.paginas - a.paginas);
+
+
 let msg
 let msg2
+let msg3
 let option
 let eliminar
 function inicio() {
@@ -515,6 +536,7 @@ do {
     msg += "2. eliminar libro \n"
     msg += "3. agregar libro \n"
     msg += "4. Listar libros \n"
+    msg += "5. Los resumenes de este segmento \n"
 
     option=parseInt(prompt(msg))
     switch (option) {
@@ -557,17 +579,35 @@ do {
                     alert("ingrese un dato valido")
                     break;
             }
-            
-            
         break;
+        case 5 :
+            msg3 = "1. libros caros \n"
+            msg3 += "2. libros con mas paginas \n"
+            msg3 += "3. libros con paginas de mayor a menor"
+
+            let option_filter=parseInt(prompt(msg3))
+            switch (option_filter) {
+                case 1 :
+                    console.log(librosCaros)
+                    break;
+                case 2 :
+                    console.log(librosConMasPaginasX)
+                    break;
+                case 3 :
+                    console.log(paginasMayorMenor)
+                    break; 
+                default :
+                alert("ingrese un dato valido")
+                    break;
+                }
+            break;        
         default :
             alert("ingrese un dato valido")
             break;
-    } 
+             
+    } } while (option = 0);}
 
-} while (option = 0);
-
-}
+    
 let continuar
 do {
     inicio()
