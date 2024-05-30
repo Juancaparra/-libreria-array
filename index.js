@@ -521,6 +521,56 @@ let librosConMasPaginasX = librosConMasPaginas.map((libro) => {
 
 let paginasMayorMenor= libro.sort((a,b) => b.paginas - a.paginas);
 
+let LibrosCarosResumidos = libro
+.filter((libro) => {
+    return libro.precio > 50000;
+})
+.map((titulo) => {
+    return {
+    titulo: titulo.titulo,
+    autor: titulo.autor,
+    precio: titulo.precio
+};
+});
+
+let menosPaginasResumidas = libro
+.filter((libro) => {
+    return libro.paginas < 100;
+})
+.map((libro) => {
+    return {
+    titulo: libro.titulo,
+    autor: libro.autor,
+    editorial: libro.editorial,
+    paginas: libro.paginas
+};
+}); 
+
+let LibrosCarosMayorMenor = libro
+.filter((libro) => {
+    return libro.precio > 50000;
+})
+.map((titulo) => {
+    return {
+    titulo: titulo.titulo,
+    autor: titulo.autor,
+    precio: titulo.precio
+}
+})
+.sort((a,b) => b.precio - a.precio);
+
+let paginasMayorMenorResumidos = libro
+.sort((a,b) => b.paginas - a.paginas)
+.map((libro) => {
+    return {
+        titulo: libro.titulo,
+        autor: libro.autor,
+        editorial: libro.editorial,
+        paginas: libro.paginas
+}
+})
+
+
 
 let msg
 let msg2
@@ -552,7 +602,7 @@ do {
         case 4:
             msg2 = "Elija una opcion\n"
             msg2 += "1. lista de libros \n"
-            msg2 += "2. 10 interaciones diferentes \n"
+            msg2 += "2. 10 iteraciones diferentes \n"
             msg2 += "3. lista de libros con descuento \n"
 
             let option_listas=parseInt(prompt(msg2))
@@ -583,24 +633,42 @@ do {
         case 5 :
             msg3 = "1. libros caros \n"
             msg3 += "2. libros con mas paginas \n"
-            msg3 += "3. libros con paginas de mayor a menor"
+            msg3 += "3. libros con paginas de mayor a menor\n"
+            msg3 += "4. libros con precio mayor a 50000 \n"
+            msg3 += "5. libros con paginas menor a 100 \n"
+            msg3 += "6. libros con precio mayor a 50000 y de mayor a menor  \n"
+            msg3 += "7. libros con paginas mayor a menor resumidas y por numero mas alto\n"
+
+            
 
             let option_filter=parseInt(prompt(msg3))
             switch (option_filter) {
                 case 1 :
-                    console.log(librosCaros)
+                    console.table(librosCaros)
                     break;
                 case 2 :
-                    console.log(librosConMasPaginasX)
+                    console.table(librosConMasPaginasX)
                     break;
                 case 3 :
-                    console.log(paginasMayorMenor)
-                    break; 
+                    console.table(paginasMayorMenor)
+                    break;
+                case 4 :
+                    console.table(LibrosCarosResumidos)
+                    break;
+                case 5 :
+                    console.table(menosPaginasResumidas)
+                    break;
+                case 6 :
+                    console.table(LibrosCarosMayorMenor)   
+                     break;    
+                case 7 :
+                    console.table(paginasMayorMenorResumidos)
+                    break;    
                 default :
                 alert("ingrese un dato valido")
                     break;
                 }
-            break;        
+            break;       
         default :
             alert("ingrese un dato valido")
             break;
