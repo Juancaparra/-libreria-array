@@ -360,16 +360,16 @@ function agregarLibro(libro) {
     dimensiones=prompt("ingrese las dimensiones del libro")
     peso=prompt("ingrese el peso del libro")
     libro.push({titulo,autor,genero,idioma,precio,formato,isbn,descripcion,estado,ubicacion,fecha_publicacion,editorial,paginas,dimensiones,peso})
-    console.log(libro)
+    console.table(libro)
 }
 
 function mostrarLibro(libro) {
-    console.log(libro)
+    console.table(libro)
 }
 
 function eliminarLibro(libro) {
     libro.pop()
-    console.log(libro)
+    console.table(libro)
 }
 
 let lista0 = libro.map((libro) => {
