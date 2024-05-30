@@ -348,16 +348,16 @@ function agregarLibro(libro) {
     autor=prompt("ingrese el autor del libro")
     genero=prompt("ingrese el genero del libro")
     idioma=prompt("ingrese el idioma del libro")
-    precio=prompt("ingrese el precio del libro")
+    precio=prompt(parseFloat("ingrese el precio del libro"))
     formato=prompt("ingrese el formato del libro")
     isbn=prompt("ingrese el isbn del libro")
-    descripcion=prompt("ingrese el descripcion del libro")
+    descripcion=prompt("ingrese la descripcion del libro")
     estado=prompt("ingrese el estado del libro")
-    ubicacion=prompt("ingrese el ubicacion del libro")
-    fecha_publicacion=prompt("ingrese el fecha_publicacion del libro")
+    ubicacion=prompt("ingrese la ubicacion del libro")
+    fecha_publicacion=prompt("ingrese la fecha de publicacion del libro")
     editorial=prompt("ingrese el editorial del libro")
-    paginas=prompt("ingrese el paginas del libro")
-    dimensiones=prompt("ingrese el dimensiones del libro")
+    paginas=prompt(parseFloat("ingrese las paginas del libro"))
+    dimensiones=prompt("ingrese las dimensiones del libro")
     peso=prompt("ingrese el peso del libro")
     libro.push({titulo,autor,genero,idioma,precio,formato,isbn,descripcion,estado,ubicacion,fecha_publicacion,editorial,paginas,dimensiones,peso})
     console.log(libro)
@@ -491,14 +491,20 @@ let lista10 = libro.map((libro) => {
 };
 });
 
-let libroConDescuentos = libro.map((libro) => {
+let agregarDescento = libro.map((libro) => {
+    return {
+        ...libro,
+        descuento: 20
+    };
+    });
+
+let libroConDescuentos = agregarDescento.map((libro) => {
     return {
         titulo: libro.titulo,
         autor: libro.autor,
         editorial: libro.editorial,
         precio: libro.precio,
-        descuento: libro.descuento,
-        descuento: 20,
+        descuento: libro.descuento
     };
 });
 
