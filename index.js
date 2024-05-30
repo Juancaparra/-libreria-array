@@ -610,6 +610,7 @@ do {
             msg2 += "1. lista de libros \n"
             msg2 += "2. 10 iteraciones diferentes \n"
             msg2 += "3. lista de libros con descuento \n"
+            msg2 += "4. lista de libros resumidos con descuento \n"
 
             let option_listas=parseInt(prompt(msg2))
             switch (option_listas) {
@@ -629,6 +630,9 @@ do {
                     console.table(lista10)
                     break;
                 case 3 :
+                    console.table(agregarDescento)
+                    break;
+                case 4 :
                     console.table(libroConDescuentos)
                     break;
                 default:
