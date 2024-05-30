@@ -182,7 +182,7 @@ let libro=[
         ubicacion: "Pasillo 6, Estante 3",
         fecha_publicacion: "1866",
         editorial: "Langosta editores",
-        paginas: 671,
+        paginas: 67,
         dimensiones: "13 x 3 x 20 cm",
         peso: "0.6 kg"
     },
@@ -267,7 +267,7 @@ let libro=[
         ubicacion: "Pasillo 2, Estante 4",
         fecha_publicacion: "1847",
         editorial: "Torre de papel",
-        paginas: 416,
+        paginas: 41,
         dimensiones: "13 x 2 x 20 cm",
         peso: "0.3 kg"
     },
@@ -335,7 +335,7 @@ let libro=[
         ubicacion: "Pasillo 7, Estante 3",
         fecha_publicacion: "1877",
         editorial: "Luna libros",
-        paginas: 964,
+        paginas: 96,
         dimensiones: "13 x 3 x 20 cm",
         peso: "0.9 kg"
     }
@@ -583,6 +583,7 @@ let msg2
 let msg3
 let option
 let eliminar
+
 function inicio() {
 
 do {
