@@ -576,11 +576,71 @@ let paginasMayorMenorResumidos = libro
 }
 })
 
+let buscarTitulo = libro.find((libro) => {
+    return libro.titulo === "Drácula";
+  });
 
+let buscarAutor = libro.find((libro) => {
+    return libro.autor === "Ray Bradbury";
+}); 
+
+let buscarFecha = libro.find((libro) => {
+    return libro.fecha_publicacion === "1954";
+});
+
+let buscarGenero = libro.find((libro) => {
+    return libro.genero === "Ficción";
+});
+
+let buscarIdioma = libro.find((libro) => {
+    return libro.idioma === "Español";
+});
+
+
+let buscar1 = libro.find((libro) => {
+    return libro.precio === 39900;
+  });
+
+let buscar2 = libro.find((libro) => {
+    return libro.formato === "Tapa blanda";
+}); 
+
+let buscar3 = libro.find((libro) => {
+    return libro.isbn === "9780451419439";
+});
+
+let buscar4 = libro.find((libro) => {
+    return libro.descripcion === "Una novela que narra las experiencias y recuerdos del narrador.";
+});
+
+let buscar5 = libro.find((libro) => {
+    return libro.estado === "Nuevo";
+});
+
+let buscar6 = libro.find((libro) => {
+    return libro.ubicacion === "Pasillo 2, Estante 3";
+  });
+
+let buscar7 = libro.find((libro) => {
+    return libro.editorial === "Torre de papel";
+}); 
+
+let buscar8 = libro.find((libro) => {
+    return libro.paginas === 328;
+});
+
+let buscar9 = libro.find((libro) => {
+    return libro.dimensiones === "13.2 x 1.9 x 20 cm";
+});
+
+let buscar10 = libro.find((libro) => {
+    return libro.peso === "1.1 kg";
+});
 
 let msg
 let msg2
 let msg3
+let msg4
 let option
 let eliminar
 
@@ -594,6 +654,7 @@ do {
     msg += "3. agregar libro \n"
     msg += "4. Listar libros \n"
     msg += "5. Los resumenes de este segmento \n"
+    msg += "6. Las funcionalidades de este segmento \n"
 
     option=parseInt(prompt(msg))
     switch (option) {
@@ -679,6 +740,47 @@ do {
                 alert("ingrese un dato valido")
                     break;
                 }
+            break;
+        case 6 :
+            msg3 = "1. libro por titulo \n"
+            msg3 += "2. libro por autor \n"
+            msg3 += "3. libro por fecha de publicacion\n"
+            msg3 += "4. libro por genero  \n"
+            msg3 += "5. libro por idioma \n"
+            msg3 += "6. 10 iteraciones diferentes  \n"
+
+            let option_find = parseInt(prompt(msg3))
+            switch (option_find) {
+                case 1:
+                    console.table(buscarTitulo)
+                    break;
+                case 2:
+                    console.table(buscarAutor)
+                    break;
+                case 3:
+                    console.table(buscarFecha)
+                    break;
+                case 4:
+                    console.table(buscarGenero)
+                    break;
+                case 5:
+                    console.table(buscarIdioma)
+                    break;
+                case 6:
+                    console.table(buscar1)
+                    console.table(buscar2)
+                    console.table(buscar3)
+                    console.table(buscar4)
+                    console.table(buscar5)
+                    console.table(buscar6)
+                    console.table(buscar7)
+                    console.table(buscar8)
+                    console.table(buscar9)
+                    console.table(buscar10)
+                    break;
+                default:
+                    break;
+            }
             break;       
         default :
             alert("ingrese un dato valido")
